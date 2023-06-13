@@ -24,7 +24,9 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     libswscale-dev \
     libavformat-dev \
-    libavcodec-dev
+    libavcodec-dev \
+    libblas-dev \
+    liblapack-dev
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
